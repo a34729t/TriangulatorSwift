@@ -26,10 +26,16 @@ class ViewController: UIViewController {
 //        beaconManager = sharedBeaconManager
 //        if !beaconManager.locationServicesEnabled()
 
+        // Set background image
+        let backgroundImageView: UIImageView = UIImageView(image: UIImage(contentsOfFile: "sandyCay"))
+        self.view.addSubview(backgroundImageView)
+        
         // Draw grid
         let gridView: GridView = GridView(frame: self.view.frame, columns: numberColumns)
         gridView.alpha = 0.25;
         self.view.addSubview(gridView);
+        
+        // Create iBeacons
 
     }
 
