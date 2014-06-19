@@ -12,29 +12,33 @@
 import UIKit
 
 class GridView: UIView {
-    var numberOfColumns: Int
+    let gridWidth: CGFloat = 0.5
+    var columns: Int
 
     init(frame: CGRect, columns: Int) {
-        numberOfColumns = columns - 1
+        // Set size of grid
+        self.columns = columns - 1
         super.init(frame: frame)
+        
+        // Set view to be transparent
         self.opaque = false;
         self.backgroundColor = UIColor(white: 0.0, alpha: 0.0);
     }
 
     override func drawRect(rect: CGRect) {
         let context: CGContextRef = UIGraphicsGetCurrentContext()
-        CGContextSetLineWidth(context, 0.5)
+        CGContextSetLineWidth(context, gridWidth)
         CGContextSetStrokeColorWithColor(context, UIColor.blackColor().CGColor)
 
         // Calculate basic dimensions
-        let columnWidth: CGFloat = self.frame.size.width / (CGFloat(numberOfColumns) + 1.0)
+        let columnWidth: CGFloat = self.frame.size.width / (CGFloat(self.columns) + 1.0)
         let rowHeight: CGFloat = columnWidth;
         let numberOfRows: Int = Int(self.frame.size.height)/Int(rowHeight);
 
         // ---------------------------
         // Drawing column lines
         // ---------------------------
-        for i in 1...numberOfColumns {
+        for i in 1...self.columns {
             var startPoint: CGPoint = CGPoint(x: columnWidth * CGFloat(i), y: 0.0)
             var endPoint: CGPoint = CGPoint(x: startPoint.x, y: self.frame.size.height)
 
