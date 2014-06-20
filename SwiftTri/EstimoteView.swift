@@ -10,8 +10,7 @@ import CoreLocation
 import UIKit
 
 class EstimoteView: UIView, UIGestureRecognizerDelegate {
-    
-    
+
     var major, minor: String
     var step: CGFloat
     var proximity: CLProximity

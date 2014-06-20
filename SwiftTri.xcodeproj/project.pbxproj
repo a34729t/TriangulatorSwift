@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		260F527B1952776E00092D38 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 260F527A1952776E00092D38 /* README.md */; };
+		262736DE1954C4FB00C1BB68 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262736DD1954C4FB00C1BB68 /* Utils.swift */; };
 		2665B29A19525E9E0009BF2F /* EstimoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665B29919525E9E0009BF2F /* EstimoteView.swift */; };
 		2665B29C19525EC70009BF2F /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665B29B19525EC70009BF2F /* GridView.swift */; };
 		26B692B619521BDE0024F43B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B692B519521BDE0024F43B /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		260F527A1952776E00092D38 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		262736DD1954C4FB00C1BB68 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		2665B29919525E9E0009BF2F /* EstimoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimoteView.swift; sourceTree = "<group>"; };
 		2665B29B19525EC70009BF2F /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		26B692B019521BDE0024F43B /* SwiftTri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTri.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 				26B692B719521BDE0024F43B /* ViewController.swift */,
 				2665B29919525E9E0009BF2F /* EstimoteView.swift */,
 				2665B29B19525EC70009BF2F /* GridView.swift */,
+				262736DD1954C4FB00C1BB68 /* Utils.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				26B692B619521BDE0024F43B /* AppDelegate.swift in Sources */,
 				2665B29C19525EC70009BF2F /* GridView.swift in Sources */,
 				26B692D519521F8D0024F43B /* Config.swift in Sources */,
+				262736DE1954C4FB00C1BB68 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
