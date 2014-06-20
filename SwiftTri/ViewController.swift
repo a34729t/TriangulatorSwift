@@ -21,16 +21,13 @@ class ViewController: UIViewController {
     var scanMode: Bool = false
     
     // iBeacons
-    var blueEstimote: EstimoteView!
-    var greenEstimote: EstimoteView!
-    var purpleEstimote: EstimoteView!
+    var blueEstimote, greenEstimote, purpleEstimote: EstimoteView!
     var iBeacons: EstimoteView[] = []
 
     // UI
     var gridView: GridView?
     var markerView: UIImageView?
-    var menuButton: UIButton?
-    var scanButton: UIButton?
+    var menuButton, scanButton: UIButton?
 
 
     // TODO: These need to be MENU_IMG_OFF/MENU_IMG_ON
