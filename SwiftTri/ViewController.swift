@@ -31,15 +31,15 @@ class ViewController: UIViewController {
 
 
     // TODO: These need to be MENU_IMG_OFF/MENU_IMG_ON
-    let backgroundImage = UIImage(contentsOfFile: "/Users/nflacco/Projects/ios/TriangulatorSwift/SwiftTri/Images.xcassets/background/sandycay.imageset/03478_sandycay_640x1136@2x.png")
-    let menuIconImage = UIImage(contentsOfFile: "/Users/nflacco/Projects/ios/TriangulatorSwift/SwiftTri/Images.xcassets/icons/menuIcon.imageset/delta.png")
-    let scanIconImage = UIImage(contentsOfFile: "/Users/nflacco/Projects/ios/TriangulatorSwift/SwiftTri/Images.xcassets/icons/scanIcon.imageset/scan.png")
-    let locationIconImage = UIImage(contentsOfFile: "/Users/nflacco/Projects/ios/TriangulatorSwift/SwiftTri/Images.xcassets/icons/locationIcon.imageset/location_marker.png")
+    let backgroundImage = UIImage(contentsOfFile: "/Users/nflacco/projects/ios/SwiftTri/SwiftTri/Images.xcassets/background/sandycay.imageset/03478_sandycay_640x1136@2x.png")
+    let menuIconImage = UIImage(contentsOfFile: "/Users/nflacco/projects/ios/SwiftTri/SwiftTri/Images.xcassets/icons/menuIcon.imageset/delta.png")
+    let scanIconImage = UIImage(contentsOfFile: "/Users/nflacco/projects/ios/SwiftTri/SwiftTri/Images.xcassets/icons/scanIcon.imageset/scan.png")
+    let locationIconImage = UIImage(contentsOfFile: "/Users/nflacco/projects/ios/SwiftTri/SwiftTri/Images.xcassets/icons/locationIcon.imageset/location_marker.png")
 
     // Beacon Images
-    let beaconBlue = UIImage(contentsOfFile: "/Users/nflacco/Projects/ios/TriangulatorSwift/SwiftTri/Images.xcassets/beacons/beaconBlue.imageset/beacon_blue.png")
-    let beaconGreen = UIImage(contentsOfFile: "/Users/nflacco/Projects/ios/TriangulatorSwift/SwiftTri/Images.xcassets/beacons/beaconGreen.imageset/beacon_green.png")
-    let beaconPurple = UIImage(contentsOfFile: "/Users/nflacco/Projects/ios/TriangulatorSwift/SwiftTri/Images.xcassets/beacons/beaconPurple.imageset/beacon_purple.png")
+    let beaconBlue = UIImage(contentsOfFile: "/Users/nflacco/projects/ios/SwiftTri/SwiftTri/Images.xcassets/beacons/beaconBlue.imageset/beacon_blue.png")
+    let beaconGreen = UIImage(contentsOfFile: "/Users/nflacco/projects/ios/SwiftTri/SwiftTri/Images.xcassets/beacons/beaconGreen.imageset/beacon_teal.png")
+    let beaconPurple = UIImage(contentsOfFile: "/Users/nflacco/projects/ios/SwiftTri/SwiftTri/Images.xcassets/beacons/beaconPurple.imageset/beacon_purple.png")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,11 +69,11 @@ class ViewController: UIViewController {
             coordinates:point0,
             major:BEACON_BLUE_MAJOR,
             minor:BEACON_BLUE_MINOR);
-        self.blueEstimote = self.createBeaconView(image: beaconGreen,
+        self.greenEstimote = self.createBeaconView(image: beaconGreen,
             coordinates:point1,
             major:BEACON_GREEN_MAJOR,
             minor:BEACON_GREEN_MINOR);
-        self.blueEstimote = self.createBeaconView(image: beaconBlue,
+        self.purpleEstimote = self.createBeaconView(image: beaconBlue,
             coordinates:point2,
             major:BEACON_BLUE_MAJOR,
             minor:BEACON_BLUE_MINOR);
