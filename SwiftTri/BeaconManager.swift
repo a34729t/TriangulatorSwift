@@ -42,12 +42,12 @@ class BeaconManager: NSObject, CLLocationManagerDelegate    {
 
     func locationManager(manager: CLLocationManager!, didDetermineState state: CLRegionState, forRegion region: CLRegion!) {
         switch state {
-        case CLRegionState.Inside:
+        case .Inside:
             println("BeaconManager:didDetermineState CLRegionState.Inside");
             locationManager.startRangingBeaconsInRegion(estimoteRegion) // should locationManager be manager?
-        case CLRegionState.Outside:
+        case .Outside:
             println("BeaconManager:didDetermineState CLRegionState.Outside");
-        case CLRegionState.Unknown:
+        case .Unknown:
             println("BeaconManager:didDetermineState CLRegionState.Unknown");
         default:
              println("BeaconManager:didDetermineState default");
