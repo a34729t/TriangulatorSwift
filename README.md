@@ -8,6 +8,10 @@ Click on the bottom-left triangle icon (it should turn gray) to configure the iB
 
 Next, click on the bottom-right scan icon to start scanning for iBeacons.
 
+## Testing
+
+This works on an iPhone 4S running iOS 7.1, with Estimote iBeacons.
+
 ## Notes
 
 * The app is hardcoded to use 3 iBeacons. The triangulation code could handle more of them, but the iBeacon setup would need to be modified to support this.
