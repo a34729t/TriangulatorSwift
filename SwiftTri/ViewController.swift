@@ -130,7 +130,7 @@ class ViewController: UIViewController, BeaconManagerDelegate {
             }
         }
         if num == self.iBeacons.count {
-            return CGPoint(x: 100.0,y: 100.0) // Off screen
+            return CGPoint(x: -100.0,y: -100.0) // Off screen
         }
         
         // TODO:

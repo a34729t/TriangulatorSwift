@@ -6,7 +6,7 @@ This app demonstrates how to triangulate distance between iBeacons. I wrote it f
 
 Click on the bottom-left triangle icon (it should turn gray) to configure the iBeacons you have to match their real-life location, and click again on the triangle when you are done.
 
-Next, click on the bottom-right scan icon to start scanning for iBeacons.
+Next, click on the bottom-right scan icon to start scanning for iBeacons. Once iBeacons are in range, the location marker icon should appear. It's default position is offscreen (at -100, -100).
 
 ## Testing
 
