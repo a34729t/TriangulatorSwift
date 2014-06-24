@@ -12,7 +12,7 @@ Next, click on the bottom-right scan icon to start scanning for iBeacons.
 
 * The app is hardcoded to use 3 iBeacons. The triangulation code could handle more of them, but the iBeacon setup would need to be modified to support this.
 * The triangulation code doesn't handle the 0 < n < 3 signal case. When there are only one or two iBeacons present, we should do something different with the UI. The same goes for 0 iBeacons.
-
+* To make CoreLocation work in iOS 8, you need to add stuff to the plist! See: http://stackoverflow.com/questions/24062509/ios-8-location-services-not-working
 
 ## Shamelessly Stolen Artwork
 

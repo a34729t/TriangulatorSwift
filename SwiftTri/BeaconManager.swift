@@ -16,7 +16,7 @@ protocol BeaconManagerDelegate {
 
 class BeaconManager: NSObject, CLLocationManagerDelegate    {
     var locationManager: CLLocationManager = CLLocationManager()
-    let registeredBeaconMajor: String[] = []
+    let registeredBeaconMajor: String[] = [BEACON_BLUE_MAJOR, BEACON_GREEN_MAJOR, BEACON_PURPLE_MAJOR]
     let estimoteRegion: CLBeaconRegion = CLBeaconRegion(proximityUUID:BEACON_PROXIMITY_UUID, identifier:"Estimote Region")
     var delegate: BeaconManagerDelegate?
 
