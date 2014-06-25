@@ -1,6 +1,6 @@
 # Triangulator (in Swift)
 
-This app demonstrates how to triangulate distance between iBeacons. I wrote it for a class I teach as part of Twitter's internal training program.
+This app demonstrates how to triangulate distance between iBeacons using CoreLocation. I wrote it for a class I teach as part of Twitter's internal training program.
 
 ## Instructions
 
@@ -11,6 +11,10 @@ Next, click on the bottom-right scan icon to start scanning for iBeacons. Once i
 ## Testing
 
 This works on an iPhone 4S running iOS 7.1, with Estimote iBeacons.
+
+## CoreLocation vs CoreBluetooth vs EstimoteSDK
+
+I am using CoreLocation, which is the only accepted way of interating with iBeacons. CoreBluetooth doesn't give you the background capabilities needed in a distance-aware app. CoreLocation gives you iBeacon class (proximity UUID), major and minor (think of them as ways to give an iBeacon a unique ID). CoreBluetooth gives you only a deviceUUID.
 
 ## Notes
 
