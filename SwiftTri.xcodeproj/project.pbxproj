@@ -17,7 +17,6 @@
 		26B692BB19521BDE0024F43B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B692B919521BDE0024F43B /* Main.storyboard */; };
 		26B692BD19521BDE0024F43B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B692BC19521BDE0024F43B /* Images.xcassets */; };
 		26B692C919521BDE0024F43B /* SwiftTriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B692C819521BDE0024F43B /* SwiftTriTests.swift */; };
-		26B692D519521F8D0024F43B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B692D419521F8D0024F43B /* Config.swift */; };
 		26B692D7195220800024F43B /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B692D6195220800024F43B /* BeaconManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +45,6 @@
 		26B692C219521BDE0024F43B /* SwiftTriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B692C719521BDE0024F43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26B692C819521BDE0024F43B /* SwiftTriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTriTests.swift; sourceTree = "<group>"; };
-		26B692D419521F8D0024F43B /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		26B692D6195220800024F43B /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +138,6 @@
 		26B692D319521F550024F43B /* iBeacon */ = {
 			isa = PBXGroup;
 			children = (
-				26B692D419521F8D0024F43B /* Config.swift */,
 				26B692D6195220800024F43B /* BeaconManager.swift */,
 			);
 			name = iBeacon;
@@ -252,7 +249,6 @@
 				260F527B1952776E00092D38 /* README.md in Sources */,
 				26B692B619521BDE0024F43B /* AppDelegate.swift in Sources */,
 				2665B29C19525EC70009BF2F /* GridView.swift in Sources */,
-				26B692D519521F8D0024F43B /* Config.swift in Sources */,
 				262736DE1954C4FB00C1BB68 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
