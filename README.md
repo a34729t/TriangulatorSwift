@@ -3,6 +3,8 @@ Triangulator (in Swift)
 
 This app demonstrates how to triangulate distance between iBeacons using CoreLocation. I wrote it for a class I teach as part of Twitter's internal training program.
 
+Triangulation is not precise because you only have 4 distances you get when ranging an iBeacon (immmediate, near, far and unknown).
+
 ## Instructions
 
 Click on the bottom-left triangle icon (it should turn gray) to configure the iBeacons you have to match their real-life location, and click again on the triangle when you are done.

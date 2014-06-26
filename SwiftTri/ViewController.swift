@@ -38,7 +38,9 @@ class ViewController: UIViewController, BeaconManagerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
 
         self.beaconManager = sharedBeaconManager
-//        if !self.beaconManager.locationServicesEnabled() // TODO
+        if !CLLocationManager.locationServicesEnabled() {
+            // TODO: Alert, once alerts work without crashing app
+        }
 
         // Set background image
         let backgroundImageView: UIImageView = UIImageView(image: backgroundImage)
