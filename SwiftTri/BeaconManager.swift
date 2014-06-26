@@ -7,7 +7,6 @@
 //
 
 import CoreLocation
-import Foundation
 import UIKit
 
 // General search criteria for beacons that are broadcasting
