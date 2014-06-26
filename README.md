@@ -1,4 +1,5 @@
-# Triangulator (in Swift)
+Triangulator (in Swift)
+=====================
 
 This app demonstrates how to triangulate distance between iBeacons using CoreLocation. I wrote it for a class I teach as part of Twitter's internal training program.
 
