@@ -15,6 +15,10 @@ Next, click on the bottom-right scan icon to start scanning for iBeacons. Once i
 
 This works on an iPhone 4S running iOS 7.1, with Estimote iBeacons.
 
+## Troubleshooting
+
+If the app doesn't working, you may need to restart your iOS device. I've noticed with any BLE/iBeacon stuff that seems to be the only thing that works. And then it's all fine until the next time!
+
 ## CoreLocation vs CoreBluetooth
 
 I am using CoreLocation, which is the only accepted way of interating with iBeacons. CoreBluetooth doesn't give you the background capabilities needed in a distance-aware app. 
