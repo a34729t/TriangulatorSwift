@@ -19,10 +19,10 @@ let beaconGreen = UIImage(named: "beaconGreen.png")
 let beaconPurple = UIImage(named: "beaconPurple.png")
 
 // Icons in on/off mode
-let menuImgOff = filledImageFrom(image: menuIconImage, UIColor.blackColor())
-let menuImgOn = filledImageFrom(image: menuIconImage, UIColor.grayColor())
-let scanImgOff = filledImageFrom(image: scanIconImage, UIColor.blackColor())
-let scanImgOn = filledImageFrom(image: scanIconImage, UIColor.grayColor())
+let menuImgOff = filledImageFrom(image: menuIconImage!, UIColor.blackColor())
+let menuImgOn = filledImageFrom(image: menuIconImage!, UIColor.grayColor())
+let scanImgOff = filledImageFrom(image: scanIconImage!, UIColor.blackColor())
+let scanImgOn = filledImageFrom(image: scanIconImage!, UIColor.grayColor())
 
 // From http://stackoverflow.com/questions/845278/overlaying-a-uiimage-with-a-color?lq=1
 func filledImageFrom(#image:UIImage, color:UIColor) -> UIImage {
