@@ -25,6 +25,10 @@ class GridView: UIView {
         self.backgroundColor = UIColor(white: 0.0, alpha: 0.0);
     }
 
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func drawRect(rect: CGRect) {
         let context: CGContextRef = UIGraphicsGetCurrentContext()
         CGContextSetLineWidth(context, gridWidth)

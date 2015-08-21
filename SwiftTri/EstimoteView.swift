@@ -44,6 +44,10 @@ class EstimoteView: UIView, UIGestureRecognizerDelegate {
         self.setCoordinates(self.center)
         self.addSubview(self.coordinateLabel)
     }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     func setCoordinates(point: CGPoint) {
         let x: Int = Int(point.x/self.step)
@@ -60,7 +64,7 @@ class EstimoteView: UIView, UIGestureRecognizerDelegate {
         // Handle panning and end (snap to grid)
         if(uiPanGestureRecognizer.state != UIGestureRecognizerState.Ended) {
             // Keep on panning
-            let translation = uiPanGestureRecognizer.translationInView(self.superview)
+            let translation = uiPanGestureRecognizer.translationInView(self.superview!)
             self.center = CGPoint(x: self.lastLocation.x + translation.x, y: self.lastLocation.y + translation.y)
             self.setCoordinates(self.center)
         } else {

@@ -27,7 +27,7 @@ protocol BeaconManagerDelegate {
 
 class BeaconManager: NSObject, CLLocationManagerDelegate    {
     var locationManager: CLLocationManager = CLLocationManager()
-    let registeredBeaconMajor: String[] = [BEACON_BLUE_MAJOR, BEACON_GREEN_MAJOR, BEACON_PURPLE_MAJOR]
+    let registeredBeaconMajor: [String] = [BEACON_BLUE_MAJOR, BEACON_GREEN_MAJOR, BEACON_PURPLE_MAJOR]
     let estimoteRegion: CLBeaconRegion = CLBeaconRegion(proximityUUID:BEACON_PROXIMITY_UUID, identifier:"Estimote Region")
     var delegate: BeaconManagerDelegate?
 
@@ -35,7 +35,7 @@ class BeaconManager: NSObject, CLLocationManagerDelegate    {
         return sharedBeaconManager
     }
 
-    init() {
+    override init() {
         super.init()
         locationManager.delegate = self
     }
@@ -73,13 +73,15 @@ class BeaconManager: NSObject, CLLocationManagerDelegate    {
         }
     }
 
-    func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: CLBeacon[]!, inRegion region: CLBeaconRegion!) {
+    func locationManager(manager: CLLocationManager!,
+        didRangeBeacons beacons: [AnyObject]!,
+        inRegion region: CLBeaconRegion!) {
         println("BM didRangeBeacons");
         
-        for beacon: CLBeacon in beacons {
+        for beacon: CLBeacon in beacons as! [CLBeacon] {
             // TODO: better way to unwrap optionals?
-            if let major: String = beacon.major?.stringValue? {
-                if let minor: String = beacon.minor?.stringValue? {
+            if let major: String = beacon.major?.stringValue {
+                if let minor: String = beacon.minor?.stringValue {
                     let contained: Bool = contains(registeredBeaconMajor, major)
                     let active: Bool = (UIApplication.sharedApplication().applicationState == UIApplicationState.Active)
                     if contained && active {

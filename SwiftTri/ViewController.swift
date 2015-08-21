@@ -26,7 +26,7 @@ class ViewController: UIViewController, BeaconManagerDelegate {
     
     // iBeacons
     var blueEstimote, greenEstimote, purpleEstimote: EstimoteView!
-    var iBeacons: EstimoteView[] = []
+    var iBeacons: [EstimoteView] = []
 
     // UI
     var gridView: GridView?
@@ -59,15 +59,15 @@ class ViewController: UIViewController, BeaconManagerDelegate {
         let point1: CGPoint = CGPointMake(width/6, height/8);
         let point2: CGPoint = CGPointMake(width/1.5, height/3);
 
-        self.blueEstimote = self.createBeaconView(image: beaconBlue,
+        self.blueEstimote = self.createBeaconView(image: beaconBlue!,
             coordinates:point0,
             major:BEACON_BLUE_MAJOR,
             minor:BEACON_BLUE_MINOR);
-        self.greenEstimote = self.createBeaconView(image: beaconGreen,
+        self.greenEstimote = self.createBeaconView(image: beaconGreen!,
             coordinates:point1,
             major:BEACON_GREEN_MAJOR,
             minor:BEACON_GREEN_MINOR);
-        self.purpleEstimote = self.createBeaconView(image: beaconPurple,
+        self.purpleEstimote = self.createBeaconView(image: beaconPurple!,
             coordinates:point2,
             major:BEACON_BLUE_MAJOR,
             minor:BEACON_BLUE_MINOR);
@@ -235,7 +235,7 @@ class ViewController: UIViewController, BeaconManagerDelegate {
         let menuHeight: CGFloat = 133/3;
         let menuPadding: CGFloat = 10;
 
-        let button: UIButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
+        let button: UIButton = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
         if (left) {
             button.frame = CGRectMake( menuPadding , self.view.frame.size.height - menuHeight - menuPadding, menuWidth, menuHeight);
         } else {
